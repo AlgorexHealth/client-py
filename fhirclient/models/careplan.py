@@ -122,7 +122,7 @@ class CarePlan(domainresource.DomainResource):
             ("description", "description", str, False, None, False),
             ("goal", "goal", fhirreference.FHIRReference, True, None, False),
             ("identifier", "identifier", identifier.Identifier, True, None, False),
-            ("intent", "intent", str, False, None, True),
+            ("intent", "intent", str, False, None, False),
             ("note", "note", annotation.Annotation, True, None, False),
             ("partOf", "partOf", fhirreference.FHIRReference, True, None, False),
             ("period", "period", period.Period, False, None, False),

@@ -146,7 +146,7 @@ class MedicationRequest(domainresource.DomainResource):
             ("eventHistory", "eventHistory", fhirreference.FHIRReference, True, None, False),
             ("groupIdentifier", "groupIdentifier", identifier.Identifier, False, None, False),
             ("identifier", "identifier", identifier.Identifier, True, None, False),
-            ("intent", "intent", str, False, None, True),
+            ("intent", "intent", str, False, None, False),
             ("medicationCodeableConcept", "medicationCodeableConcept", codeableconcept.CodeableConcept, False, "medication", True),
             ("medicationReference", "medicationReference", fhirreference.FHIRReference, False, "medication", True),
             ("note", "note", annotation.Annotation, True, None, False),
