@@ -130,7 +130,7 @@ class Encounter(domainresource.DomainResource):
             ("participant", "participant", EncounterParticipant, True, None, False),
             ("period", "period", period.Period, False, None, False),
             ("priority", "priority", codeableconcept.CodeableConcept, False, None, False),
-            ("reason", "reason", codeableconcept.CodeableConcept, True, None, False),
+            ("reason", "reason", codeableconcept.CodeableConcept, False, None, False),
             ("serviceProvider", "serviceProvider", fhirreference.FHIRReference, False, None, False),
             ("status", "status", str, False, None, True),
             ("statusHistory", "statusHistory", EncounterStatusHistory, True, None, False),
